@@ -1,0 +1,11 @@
+{% extends "Layout.html" %}
+
+	{% block form %} 
+		<form action="{{ url_for('profile') }}" method="POST">
+			<input type="text" name="name" id="name" class="form-control input-sm" placeholder="Name">
+			<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+			<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+			<button>submit</button>
+		</form>
+	{% endblock %}
+        

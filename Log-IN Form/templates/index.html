@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block form %}
+    <form  action="{{ url_for('user') }}" method="POST" >
+        <div class="body ">
+            <div class="container ">
+                <div class="p-3 text-light">
+                    <div class="form-group p-4 text-center mx-auto "> 
+                        <strong >LOG IN</strong>   
+                        <div><input class="form-control my-3" type="text" name="name" placeholder="name"/></div>
+                        <div><input class="form-control my-3" type="text" name="password" placeholder="Password"/></div>
+                        <div><button class="submit my-3 ">Signup</button></div>
+                        <a class="forget"  href="">Forget Password</a>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </form>
+{% endblock %}
+    

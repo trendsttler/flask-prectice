@@ -1,0 +1,10 @@
+costum.css:151:
+    .t_gz_c{
+        border: 1px solid #ddd;
+    }
+
+#mySelect    
+screen and (max-width: 736px)
+put mySelect2{
+ height:32px;
+}

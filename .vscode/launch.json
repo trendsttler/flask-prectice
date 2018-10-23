@@ -5,6 +5,23 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Flask",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "app.py",
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "0"
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload"
+            ],
+            "jinja": true
+        },
+        {
             "name": "Python: Current File (Integrated Terminal)",
             "type": "python",
             "request": "launch",
@@ -37,7 +54,7 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "app.py"
+                "FLASK_APP": "application.py"
             },
             "args": [
                 "run",
@@ -52,6 +69,11 @@
             "request": "launch",
             "program": "${file}",
             "console": "externalTerminal"
+        }
+        {
+            "postgreSql.dbName": "postgres",
+        "postgreSql.hostName": "localhost",
+        "postgreSql.username": "postgres"
         }
     ]
 }
